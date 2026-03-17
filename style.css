@@ -121,12 +121,37 @@ padding:15px;
 border-radius:15px;
 }
 
+/* BỎ bullet mặc định + chỉnh lùi */
 .card ul{
-padding-left:25px;
+list-style:none;
+padding-left:10px;
 }
 
+/* STYLE từng dòng */
 .card li{
+position:relative;
+padding-left:20px;
 margin-bottom:6px;
+transition:0.2s;
+}
+
+/* ICON thay dấu chấm */
+.card li::before{
+content:"➤";
+position:absolute;
+left:0;
+color:#ff9ecf;
+}
+
+/* HOVER nhẹ */
+.card li:hover{
+transform:translateX(5px);
+color:#ff9ecf;
+}
+
+/* TITLE */
+.card h3{
+margin-bottom:10px;
 }
 
 /* MUSIC */
