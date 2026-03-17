@@ -37,7 +37,7 @@ playBtn.onclick = function(){
 
 if(!playing){
 
-player.src = "https://www.youtube.com/embed/iedDN-fXLRA?autoplay=1";
+player.src = "https://www.youtube.com/embed/iedDN-fXLRA?autoplay=1&controls=0&showinfo=0";
 
 playBtn.innerHTML = "⏸";
 
