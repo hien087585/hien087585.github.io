@@ -74,17 +74,17 @@ class ThuHien:
 
 </div>
 
-<div class="music-player">
+<div class="spotify-player">
 
-<div class="music-info">
+<div class="song">
 
-<img class="album"
+<img class="cover"
 src="https://img.youtube.com/vi/iedDN-fXLRA/mqdefault.jpg">
 
-<div class="song-text">
+<div class="info">
 
-<h3>NẾU LÚC ĐÓ</h3>
-<p>tlinh, 2pillz</p>
+<h3>Nếu Lúc Đó</h3>
+<p>tlinh</p>
 
 </div>
 
@@ -92,22 +92,19 @@ src="https://img.youtube.com/vi/iedDN-fXLRA/mqdefault.jpg">
 
 <div class="controls">
 
-<button onclick="playMusic()">⏵</button>
-
-<button onclick="pauseMusic()">⏸</button>
-
-<button onclick="nextMusic()">⏭</button>
+<button id="playBtn">▶</button>
 
 </div>
 
-<div class="progress-container">
-
-<input type="range" id="progress" value="0">
+<input type="range" class="progress">
 
 </div>
 
 <iframe
-id="player"
+id="youtubePlayer"
+src=""
+style="display:none">
+</iframe>
 src=""
 style="display:none">
 </iframe>
