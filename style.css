@@ -78,7 +78,38 @@ backdrop-filter:blur(10px);
 }
 
 .music{
+.music-card{
 
+width:350px;
+margin:50px auto;
+
+background:rgba(0,0,0,0.6);
+
+padding:15px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+
+backdrop-filter:blur(8px);
+
+}
+
+.music-card h3{
+
+margin-bottom:10px;
+
+}
+
+.music-card iframe{
+
+width:100%;
+
+height:180px;
+
+border-radius:12px;
+
+}
 margin-top:40px;
 
 }
