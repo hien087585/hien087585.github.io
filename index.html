@@ -74,24 +74,42 @@ class ThuHien:
 
 </div>
 
-<div class="music">
+<div class="music-player">
 
-<div class="music-card">
+<div class="music-info">
 
-<h3>🎧 Coding Music</h3>
+<img class="album"
+src="https://img.youtube.com/vi/iedDN-fXLRA/mqdefault.jpg">
+
+<div class="song-text">
+
+<h3>NẾU LÚC ĐÓ</h3>
+<p>tlinh, 2pillz</p>
+
+</div>
+
+</div>
+
+<div class="controls">
+
+<button onclick="playMusic()">⏵</button>
+
+<button onclick="pauseMusic()">⏸</button>
+
+<button onclick="nextMusic()">⏭</button>
+
+</div>
+
+<div class="progress-container">
+
+<input type="range" id="progress" value="0">
+
+</div>
 
 <iframe
-src="https://www.youtube.com/embed/iedDN-fXLRA?controls=1&modestbranding=1&rel=0"
-frameborder="0"
-allowfullscreen>
+id="player"
+src=""
+style="display:none">
 </iframe>
 
 </div>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
