@@ -235,3 +235,42 @@ width:0;
 height:0;
 overflow:hidden;
 }
+
+/* CONTACT ICONS */
+.contact{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.contact a{
+width:50px;
+height:50px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.1);
+color:white;
+font-size:22px;
+
+transition:0.3s;
+backdrop-filter:blur(10px);
+}
+
+/* hover chung */
+.contact a:hover{
+transform:translateY(-6px) scale(1.1);
+box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+/* màu riêng */
+.contact a:nth-child(1):hover{ background:#1877f2; } /* facebook */
+.contact a:nth-child(2):hover{ background:#ff4b5c; } /* gmail */
+.contact a:nth-child(3):hover{ background:#000; } /* tiktok */
+.contact a:nth-child(4):hover{ background:#333; } /* github */
