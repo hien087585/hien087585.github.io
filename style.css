@@ -1,101 +1,36 @@
-body{
-
-margin:0;
-font-family:'Poppins',sans-serif;
-color:white;
-text-align:center;
-
-background-image:url("sakura.jpg");
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-
-}
-
-.overlay{
-
-background:rgba(0,0,0,0.5);
-min-height:100vh;
-padding-top:40px;
-
-}
-
-.avatar{
-
-width:150px;
-border-radius:50%;
-border:4px solid pink;
-box-shadow:0 0 20px pink;
-
-}
-
-h1{
-
-font-size:40px;
-margin:10px;
-
-}
-
-#typing{
-
-font-size:18px;
-opacity:0.9;
-
-}
-
-.bio{
-
-width:500px;
-margin:30px auto;
-
-background:rgba(0,0,0,0.7);
-padding:20px;
-border-radius:15px;
-
-font-family:monospace;
-text-align:left;
-
-}
-
-.cards{
-
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-
-}
-
-.card{
-
-background:rgba(255,255,255,0.1);
-padding:25px;
-border-radius:20px;
-
-width:220px;
-
-backdrop-filter:blur(10px);
-
-}
-
-/* MUSIC PLAYER */
+/* =========================
+   MUSIC PLAYER
+========================= */
 
 .spotify-player{
 
-width:400px;
-margin:60px auto;
+width:420px;
+margin:70px auto;
 
-background:rgba(25,25,35,0.85);
+background:rgba(20,20,30,0.85);
 
 border-radius:25px;
 
-padding:20px;
+padding:25px;
 
-box-shadow:0 10px 40px rgba(0,0,0,0.6);
+box-shadow:0 15px 40px rgba(0,0,0,0.7);
 
-backdrop-filter:blur(12px);
+backdrop-filter:blur(15px);
+
+transition:0.3s;
 
 }
+
+.spotify-player:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 50px rgba(0,0,0,0.8);
+
+}
+
+
+/* Song info */
 
 .song{
 
@@ -103,41 +38,66 @@ display:flex;
 
 align-items:center;
 
-gap:15px;
+gap:18px;
 
 }
+
+
+/* Album cover */
 
 .cover{
 
-width:65px;
-height:65px;
+width:70px;
+height:70px;
 
 border-radius:12px;
 
+box-shadow:0 0 15px rgba(255,110,199,0.6);
+
 }
+
+
+/* Song text */
 
 .info h3{
 
 margin:0;
+
 font-size:18px;
+
+font-weight:600;
 
 }
 
 .info p{
 
-margin:0;
+margin:3px 0 0 0;
+
 opacity:0.7;
+
 font-size:14px;
 
 }
 
+
+/* Controls */
+
 .controls{
 
-margin-top:15px;
+margin-top:20px;
 
-text-align:center;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:20px;
 
 }
+
+
+/* Play button */
 
 .controls button{
 
@@ -145,50 +105,62 @@ background:#ff6ec7;
 
 border:none;
 
-width:55px;
-height:55px;
+width:60px;
+height:60px;
 
 border-radius:50%;
 
-font-size:22px;
+font-size:24px;
 
 cursor:pointer;
 
 color:white;
 
-transition:0.2s;
+transition:0.25s;
+
+box-shadow:0 0 15px rgba(255,110,199,0.6);
 
 }
+
 
 .controls button:hover{
 
 transform:scale(1.15);
 
+box-shadow:0 0 25px rgba(255,110,199,0.9);
+
 }
+
+
+/* Progress bar */
 
 .progress{
 
 width:100%;
 
-margin-top:15px;
+margin-top:18px;
 
 appearance:none;
 
 height:6px;
 
-background:#444;
+background:#333;
 
 border-radius:10px;
 
+outline:none;
+
 }
+
+
+/* Progress thumb */
 
 .progress::-webkit-slider-thumb{
 
 appearance:none;
 
-width:14px;
-
-height:14px;
+width:15px;
+height:15px;
 
 background:#ff6ec7;
 
@@ -196,15 +168,19 @@ border-radius:50%;
 
 cursor:pointer;
 
+box-shadow:0 0 10px rgba(255,110,199,0.9);
+
 }
 
-/* Ẩn player youtube */
+
+/* Ẩn Youtube player */
 
 .youtube-hidden{
 
 position:absolute;
 
 width:0;
+
 height:0;
 
 overflow:hidden;
