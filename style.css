@@ -121,6 +121,14 @@ padding:15px;
 border-radius:15px;
 }
 
+.card ul{
+padding-left:25px;
+}
+
+.card li{
+margin-bottom:6px;
+}
+
 /* MUSIC */
 .spotify-player{
 margin-top:20px;
