@@ -1,188 +1,149 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* BACKGROUND */
+body{
+background:url("sakura.jpg") no-repeat center center/cover;
+height:100vh;
+color:white;
+}
+
+/* OVERLAY */
+.overlay{
+background:rgba(0,0,0,0.5);
+min-height:100vh;
+text-align:center;
+padding:30px;
+}
+
+/* AVATAR */
+.avatar{
+width:120px;
+border-radius:50%;
+margin-bottom:15px;
+box-shadow:0 0 20px rgba(255,255,255,0.4);
+}
+
+/* MAIN BOX (KHUNG CHÍNH) */
+.main-box{
+max-width:500px;
+margin:20px auto;
+padding:25px;
+border-radius:25px;
+
+background:rgba(20,20,30,0.4);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,0.15);
+
+box-shadow:
+0 0 15px rgba(255,255,255,0.15),
+0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* BIO */
+.bio{
+background:rgba(0,0,0,0.4);
+padding:15px;
+border-radius:15px;
+margin-bottom:20px;
+text-align:left;
+}
+
+.bio pre{
+font-size:13px;
+line-height:1.5;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.card{
+flex:1;
+background:rgba(0,0,0,0.4);
+padding:10px;
+border-radius:15px;
+text-align:left;
+}
+
+.card ul{
+padding-left:15px;
+}
+
 /* =========================
    MUSIC PLAYER
 ========================= */
 
 .spotify-player{
-
-width:420px;
-margin:70px auto;
-
-background:rgba(20,20,30,0.85);
-
-border-radius:25px;
-
-padding:25px;
-
-box-shadow:0 15px 40px rgba(0,0,0,0.7);
-
-backdrop-filter:blur(15px);
-
-transition:0.3s;
-
+width:100%;
+margin-top:20px;
+background:rgba(20,20,30,0.6);
+border-radius:20px;
+padding:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
 }
-
-.spotify-player:hover{
-
-transform:translateY(-5px);
-
-box-shadow:0 20px 50px rgba(0,0,0,0.8);
-
-}
-
-
-/* Song info */
 
 .song{
-
 display:flex;
-
 align-items:center;
-
-gap:18px;
-
+gap:15px;
 }
-
-
-/* Album cover */
 
 .cover{
-
-width:70px;
-height:70px;
-
-border-radius:12px;
-
-box-shadow:0 0 15px rgba(255,110,199,0.6);
-
+width:60px;
+height:60px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(255,110,199,0.5);
 }
 
-
-/* Song text */
-
 .info h3{
-
 margin:0;
-
-font-size:18px;
-
-font-weight:600;
-
+font-size:16px;
 }
 
 .info p{
-
-margin:3px 0 0 0;
-
+margin:2px 0 0;
+font-size:13px;
 opacity:0.7;
-
-font-size:14px;
-
 }
-
-
-/* Controls */
 
 .controls{
-
-margin-top:20px;
-
+margin-top:15px;
 display:flex;
-
 justify-content:center;
-
-align-items:center;
-
-gap:20px;
-
 }
-
-
-/* Play button */
 
 .controls button{
-
 background:#ff6ec7;
-
 border:none;
-
-width:60px;
-height:60px;
-
+width:50px;
+height:50px;
 border-radius:50%;
-
-font-size:24px;
-
-cursor:pointer;
-
+font-size:20px;
 color:white;
-
-transition:0.25s;
-
+cursor:pointer;
 box-shadow:0 0 15px rgba(255,110,199,0.6);
-
 }
-
-
-.controls button:hover{
-
-transform:scale(1.15);
-
-box-shadow:0 0 25px rgba(255,110,199,0.9);
-
-}
-
-
-/* Progress bar */
 
 .progress{
-
 width:100%;
-
-margin-top:18px;
-
-appearance:none;
-
-height:6px;
-
-background:#333;
-
-border-radius:10px;
-
-outline:none;
-
+margin-top:10px;
 }
 
-
-/* Progress thumb */
-
-.progress::-webkit-slider-thumb{
-
-appearance:none;
-
-width:15px;
-height:15px;
-
-background:#ff6ec7;
-
-border-radius:50%;
-
-cursor:pointer;
-
-box-shadow:0 0 10px rgba(255,110,199,0.9);
-
-}
-
-
-/* Ẩn Youtube player */
-
+/* Ẩn youtube */
 .youtube-hidden{
-
 position:absolute;
-
 width:0;
-
 height:0;
-
 overflow:hidden;
-
 }
