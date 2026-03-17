@@ -1,56 +1,59 @@
-// ============================
-// Typing text effect
-// ============================
+// Đợi HTML load xong
+document.addEventListener("DOMContentLoaded", () => {
 
-const text = "AI Student • Future AI Engineer";
+    // ============================
+    // Typing effect
+    // ============================
 
-let i = 0;
+    const text = "AI Student • Future AI Engineer";
+    let i = 0;
+    const typingEl = document.getElementById("typing");
 
-function typing(){
+    function typing(){
+        if(i < text.length){
+            typingEl.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, 60);
+        }
+    }
 
-if(i < text.length){
-
-document.getElementById("typing").innerHTML += text.charAt(i);
-
-i++;
-
-setTimeout(typing,60);
-
-}
-
-}
-
-typing();
+    typing();
 
 
-// ============================
-// Music player (1 bài)
-// ============================
+    // ============================
+    // Music player
+    // ============================
 
-let playBtn = document.getElementById("playBtn");
+    const btn = document.getElementById("playBtn");
+    const player = document.getElementById("youtubePlayer");
 
-let player = document.getElementById("youtubePlayer");
+    let playing = false;
 
-let playing = false;
+    btn.onclick = () => {
+        if(!playing){
+            player.src = "https://www.youtube.com/embed/iedDN-fXLRA?autoplay=1";
+            btn.innerHTML = "⏸";
+            playing = true;
+        }else{
+            player.src = "";
+            btn.innerHTML = "▶";
+            playing = false;
+        }
+    };
 
-playBtn.onclick = function(){
 
-if(!playing){
+    // ============================
+    // Petals effect
+    // ============================
 
-player.src = "https://www.youtube.com/embed/iedDN-fXLRA?autoplay=1&controls=0&showinfo=0";
+    const container = document.querySelector(".petals");
 
-playBtn.innerHTML = "⏸";
+    for(let i=0;i<25;i++){
+        let p = document.createElement("div");
+        p.className="petal";
+        p.style.left = Math.random()*100 + "vw";
+        p.style.animationDuration = (5 + Math.random()*5) + "s";
+        container.appendChild(p);
+    }
 
-playing = true;
-
-}else{
-
-player.src = "";
-
-playBtn.innerHTML = "▶";
-
-playing = false;
-
-}
-
-};
+});
