@@ -24,71 +24,33 @@ typing();
 
 
 // ============================
-// Music player
+// Music player (1 bài)
 // ============================
 
-let player = document.getElementById("player")
+let playBtn = document.getElementById("playBtn");
 
-let playlist = [
+let player = document.getElementById("youtubePlayer");
 
-"iedDN-fXLRA",
-"jfKfPfyJRdk",
-"DWcJFNfaw9c"
-
-]
-
-let current = 0
-
-function playMusic(){
-
-player.src =
-"https://www.youtube.com/embed/" + playlist[current] + "?autoplay=1"
-
-}
-
-function pauseMusic(){
-
-player.src = ""
-
-}
-
-function nextMusic(){
-
-current++
-
-if(current >= playlist.length){
-
-current = 0
-
-}
-
-playMusic()
-
-}
-let playBtn = document.getElementById("playBtn")
-
-let player = document.getElementById("youtubePlayer")
-
-let playing = false
+let playing = false;
 
 playBtn.onclick = function(){
 
 if(!playing){
 
-player.src = "https://www.youtube.com/embed/iedDN-fXLRA?autoplay=1"
+player.src = "https://www.youtube.com/embed/iedDN-fXLRA?autoplay=1";
 
-playBtn.innerHTML = "⏸"
+playBtn.innerHTML = "⏸";
 
-playing = true
+playing = true;
 
 }else{
 
-player.src = ""
+player.src = "";
 
-playBtn.innerHTML = "▶"
+playBtn.innerHTML = "▶";
 
-playing = false
-
-}
+playing = false;
 
 }
+
+};
