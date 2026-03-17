@@ -2,30 +2,30 @@
 <html>
 
 <head>
-
 <title>Thu Hien Portfolio</title>
 
-<link rel="stylesheet" href="style.css?v=1.0">
-
+<link rel="stylesheet" href="style.css?v=2">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+<!-- Hoa rơi -->
+<div class="petals"></div>
+
 <div class="overlay">
 
 <img class="avatar" src="avatar.png">
 
 <h1>Vũ Thị Thu Hiền</h1>
+<p class="subtitle">AI Student • Future AI Engineer</p>
 
-<p id="typing"></p>
+<div class="main-box">
 
-
+<!-- BIO -->
 <div class="bio">
-
 <h3>bio.py</h3>
-
 <pre>
 class ThuHien:
 
@@ -37,53 +37,36 @@ class ThuHien:
     def say_hi(self):
         print("Welcome to my website 🌸")
 </pre>
-
 </div>
 
-
+<!-- CARDS -->
 <div class="cards">
 
 <div class="card">
-
 <h3>Tech Skills</h3>
-
 <ul>
-
 <li>Python</li>
 <li>Machine Learning</li>
 <li>Deep Learning</li>
 <li>Computer Vision</li>
-<li>...</li>
-
 </ul>
-
 </div>
 
-
 <div class="card">
-
 <h3>Status</h3>
-
 <ul>
-
 <li>AI learner</li>
 <li>Building cool projects</li>
 <li>Future ML Engineer</li>
-<li>...</li>
-
 </ul>
-
 </div>
 
 </div>
 
-
-<!-- MUSIC PLAYER -->
-
+<!-- MUSIC -->
 <div class="spotify-player">
 
 <div class="song">
-
 <img class="cover"
 src="https://img.youtube.com/vi/iedDN-fXLRA/mqdefault.jpg">
 
@@ -91,7 +74,6 @@ src="https://img.youtube.com/vi/iedDN-fXLRA/mqdefault.jpg">
 <h3>Nếu Lúc Đó</h3>
 <p>tlinh</p>
 </div>
-
 </div>
 
 <div class="controls">
@@ -102,26 +84,15 @@ src="https://img.youtube.com/vi/iedDN-fXLRA/mqdefault.jpg">
 
 </div>
 
+</div>
+</div>
 
-<!-- Ẩn Youtube player -->
-
+<!-- hidden youtube -->
 <div class="youtube-hidden">
-
-<iframe
-id="youtubePlayer"
-width="0"
-height="0"
-src=""
-allow="autoplay">
-</iframe>
-
+<iframe id="youtubePlayer" width="0" height="0" src="" allow="autoplay"></iframe>
 </div>
-
-</div>
-
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
