@@ -30,15 +30,22 @@ z-index:2;
 
 /* AVATAR */
 .avatar{
-width:120px;
+width:160px;
 border-radius:50%;
-margin-bottom:10px;
-box-shadow:0 0 20px rgba(255,255,255,0.4);
+
+border:3px solid rgba(255,255,255,0.6);
+
+box-shadow:
+0 0 15px rgba(255,110,199,0.7),
+0 0 35px rgba(255,110,199,0.5);
+
+transition:0.3s;
+
+margin-bottom:15px;
 }
 
-.subtitle{
-opacity:0.8;
-margin-bottom:10px;
+.avatar:hover{
+transform:scale(1.05);
 }
 
 /* MAIN BOX (QUAN TRỌNG NHẤT) */
