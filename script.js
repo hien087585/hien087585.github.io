@@ -65,3 +65,30 @@ current = 0
 playMusic()
 
 }
+let playBtn = document.getElementById("playBtn")
+
+let player = document.getElementById("youtubePlayer")
+
+let playing = false
+
+playBtn.onclick = function(){
+
+if(!playing){
+
+player.src = "https://www.youtube.com/embed/iedDN-fXLRA?autoplay=1"
+
+playBtn.innerHTML = "⏸"
+
+playing = true
+
+}else{
+
+player.src = ""
+
+playBtn.innerHTML = "▶"
+
+playing = false
+
+}
+
+}
