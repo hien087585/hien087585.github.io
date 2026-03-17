@@ -1,373 +1,114 @@
-/* ======================
-   BODY + BACKGROUND
-====================== */
-
 body{
-
 margin:0;
-
 font-family:'Poppins',sans-serif;
-
 color:white;
-
 text-align:center;
-
 background-image:url("sakura.jpg");
-
 background-size:cover;
-
 background-position:center;
-
 background-attachment:fixed;
-
 }
-
-
-/* overlay tối nhẹ */
 
 .overlay{
-
-background:rgba(0,0,0,0.35);
-
+background:rgba(0,0,0,0.3);
 min-height:100vh;
-
 padding-top:40px;
-
 }
-
-
-/* ======================
-   AVATAR
-====================== */
 
 .avatar{
-
 width:150px;
-
 border-radius:50%;
-
 border:4px solid pink;
-
 box-shadow:0 0 20px pink;
-
 }
 
-
-/* ======================
-   TEXT
-====================== */
-
 h1{
-
 font-size:40px;
-
 margin:10px;
-
 }
 
 #typing{
-
 font-size:18px;
-
 opacity:0.9;
-
 }
 
-
-/* ======================
-   MAIN PORTFOLIO BOX
-====================== */
+/* KHUNG CHÍNH */
 
 .main-box{
-
-width:850px;
-
-margin:50px auto;
-
-padding:35px;
-
-/* nền đen rất nhẹ */
-
-background:rgba(0,0,0,0.22);
-
-border-radius:25px;
-
-backdrop-filter:blur(12px);
-
-/* viền sáng nhẹ */
-
-border:1px solid rgba(255,255,255,0.15);
-
-box-shadow:
-
-0 10px 40px rgba(0,0,0,0.4);
-
-transition:0.3s;
-
+max-width:900px;
+margin:40px auto;
+padding:30px;
+background:rgba(0,0,0,0.2);
+border-radius:20px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.2);
 }
 
-.main-box:hover{
-
-transform:translateY(-6px);
-
-box-shadow:
-
-0 15px 50px rgba(0,0,0,0.6),
-
-0 0 25px rgba(255,182,193,0.4);
-
-}
-
-
-/* ======================
-   BIO
-====================== */
+/* BIO */
 
 .bio{
-
-width:90%;
-
 margin:20px auto;
-
-background:rgba(0,0,0,0.35);
-
 padding:20px;
-
+background:rgba(0,0,0,0.3);
 border-radius:15px;
-
 font-family:monospace;
-
 text-align:left;
-
 }
 
-
-/* ======================
-   CARDS
-====================== */
+/* CARDS */
 
 .cards{
-
 display:flex;
-
 justify-content:center;
-
-gap:25px;
-
+gap:20px;
 flex-wrap:wrap;
-
-margin-top:20px;
-
 }
 
 .card{
-
-background:rgba(255,255,255,0.08);
-
-padding:25px;
-
-border-radius:20px;
-
+background:rgba(255,255,255,0.1);
+padding:20px;
+border-radius:15px;
 width:220px;
-
-backdrop-filter:blur(10px);
-
-transition:0.25s;
-
 }
 
-.card:hover{
-
-transform:translateY(-5px);
-
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
-
-}
-
-
-/* ======================
-   MUSIC PLAYER
-====================== */
+/* MUSIC */
 
 .spotify-player{
-
-width:420px;
-
-margin:60px auto;
-
-background:rgba(20,20,30,0.65);
-
-border-radius:25px;
-
-padding:25px;
-
-box-shadow:0 15px 40px rgba(0,0,0,0.5);
-
-backdrop-filter:blur(15px);
-
-transition:0.3s;
-
+width:400px;
+margin:40px auto;
+background:rgba(0,0,0,0.4);
+border-radius:20px;
+padding:20px;
 }
-
-.spotify-player:hover{
-
-transform:translateY(-5px);
-
-box-shadow:0 20px 50px rgba(0,0,0,0.7);
-
-}
-
-
-/* song info */
 
 .song{
-
 display:flex;
-
 align-items:center;
-
-gap:18px;
-
+gap:15px;
 }
-
-
-/* album cover */
 
 .cover{
-
-width:70px;
-
-height:70px;
-
-border-radius:12px;
-
-box-shadow:0 0 15px rgba(255,110,199,0.6);
-
+width:60px;
+height:60px;
+border-radius:10px;
 }
-
-
-/* song text */
-
-.info h3{
-
-margin:0;
-
-font-size:18px;
-
-font-weight:600;
-
-}
-
-.info p{
-
-margin:3px 0 0 0;
-
-opacity:0.7;
-
-font-size:14px;
-
-}
-
-
-/* controls */
-
-.controls{
-
-margin-top:20px;
-
-display:flex;
-
-justify-content:center;
-
-}
-
-
-/* play button */
 
 .controls button{
-
 background:#ff6ec7;
-
 border:none;
-
-width:60px;
-
-height:60px;
-
+width:50px;
+height:50px;
 border-radius:50%;
-
-font-size:24px;
-
-cursor:pointer;
-
+font-size:20px;
 color:white;
-
-transition:0.25s;
-
-box-shadow:0 0 15px rgba(255,110,199,0.6);
-
-}
-
-.controls button:hover{
-
-transform:scale(1.15);
-
-box-shadow:0 0 25px rgba(255,110,199,0.9);
-
-}
-
-
-/* progress */
-
-.progress{
-
-width:100%;
-
-margin-top:18px;
-
-appearance:none;
-
-height:6px;
-
-background:#333;
-
-border-radius:10px;
-
-outline:none;
-
-}
-
-.progress::-webkit-slider-thumb{
-
-appearance:none;
-
-width:15px;
-
-height:15px;
-
-background:#ff6ec7;
-
-border-radius:50%;
-
 cursor:pointer;
-
-box-shadow:0 0 10px rgba(255,110,199,0.9);
-
 }
 
-
-/* ======================
-   HIDE YOUTUBE PLAYER
-====================== */
+/* ẨN YOUTUBE */
 
 .youtube-hidden{
-
 position:absolute;
-
 width:0;
-
 height:0;
-
 overflow:hidden;
-
 }
